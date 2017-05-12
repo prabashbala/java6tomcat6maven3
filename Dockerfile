@@ -7,7 +7,7 @@ ENV MAVEN_VERSION=3.0.5 \
     JAVA_HOME=/usr/lib/jvm/java-6-oracle \
     TOMCAT_HOME=/usr/local/tomcat6 \
     TERM=xterm \
-	MAVEN_OPTS="-Xmx512m -XX:MaxPermSize=350m"
+    MAVEN_OPTS -XX:MaxPermSize=450m -Xms600m -Xmx2g
 ENV M2_HOME=/usr/local/apache-maven-$MAVEN_VERSION
 ENV PATH=$JAVA_HOME/bin:$M2_HOME/bin:$PATH
 ENV JAVA_VER 6
